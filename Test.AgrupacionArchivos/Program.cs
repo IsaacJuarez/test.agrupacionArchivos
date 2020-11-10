@@ -28,15 +28,6 @@ namespace Test.AgrupacionArchivos
                     }
                 }
 
-                var response = (from a in lstFiles
-                                orderby a.creationFile
-                                group a by a.creationFile into orden
-                                select new
-                                {
-                                    orden.Key,
-                                    cnt = orden.Count()
-                                }).ToList();
-
                 StringBuilder sb = new StringBuilder();
                 Console.WriteLine("***--Archivos:");
                 foreach (var item in lstFiles)
