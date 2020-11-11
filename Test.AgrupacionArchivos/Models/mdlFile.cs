@@ -9,7 +9,8 @@ namespace Test.AgrupacionArchivos.Models
         public DateTime creationFile { get; set; }
         public long filesize { get; set; }
         public string pathFile { get; set; }
-        public string UID { get; set; }
+        public string UID { get; set; } 
+        public string varfecha { get; set; }
 
         public mdlFile()
         {
@@ -19,6 +20,7 @@ namespace Test.AgrupacionArchivos.Models
             filesize = int.MinValue;
             UID = string.Empty;
             pathFile = string.Empty;
+            varfecha = string.Empty;
         }
     }
 }
